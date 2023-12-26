@@ -6,13 +6,39 @@
     <title>Counter</title>
   </head>
   <body>
-    <p id="value"></p>
-    <script type="text/javascript">setValue();</script>
-    <div>
-      <button type="button" onclick="takeOff(1)" name="b1">-1</button>
-      <button type="button" onclick="takeOff(2)" name="b2">-2</button>
-      <button type="button" onclick="takeOff(3)"name="b3">-3</button>
+    <link rel="stylesheet" href="style.css">
+    <div id="grid">
+        <div class="cell">
+          <button type="button" name="button" id="b0" onclick="select(0)"></button>
+        </div>
+        <div class="cell">
+          <button type="button" name="button" id="b1" onclick="select(1)"></button>
+        </div>
+        <div class="cell">
+          <button type="button" name="button" id="b2" onclick="select(2)"></button>
+        </div>
+        <div class="cell">
+          <button type="button" name="button" id="b3" onclick="select(3)"></button>
+        </div>
+        <div class="cell">
+          <button type="button" name="button" id="b4" onclick="select(4)"></button>
+        </div>
+        <div class="cell">
+          <button type="button" name="button" id="b5" onclick="select(5)"></button>
+        </div>
+        <div class="cell">
+          <button type="button" name="button" id="b6" onclick="select(6)"></button>
+        </div>
+        <div class="cell">
+          <button type="button" name="button" id="b7" onclick="select(7)"></button>
+        </div>
+        <div class="cell">
+          <button type="button" name="button" id="b8" onclick="select(8)"></button>
+        </div>
     </div>
-    <button type="button" name="share" onclick="send()">Send Back/Share</button>
+    <button type="submit" name="button" id="share" onclick="send()">Share</button>
+    <script type="text/javascript">
+      initializeFromURL();
+    </script>
   </body>
 </html>
